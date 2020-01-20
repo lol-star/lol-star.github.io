@@ -3,6 +3,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style type="text/css">
       * {
         zoom: 100%;
@@ -13,11 +14,12 @@
       }
       a {
         font-size: 150%;
-        background: linear-gradient(to top left, #312fa8, #763a9c);
         border-radius: 20px;
         color: white;
         text-decoration: none;
         font-family: 'Open Sans', sans-serif;
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(185,31,31,1) 50%, rgba(252,176,69,1) 100%);
       }
       #main {
         font-family: 'Open Sans', sans-serif;
@@ -29,6 +31,14 @@
         font-family: 'Roboto', sans-serif;
         text-align: center;
       }
+      .one {
+        background: rgb(34,193,195);
+        background: -webkit-linear-gradient(bottom, rgba(34,193,195,1) 0%, rgba(241,176,36,1) 100%);
+        background: -moz-linear-gradient(bottom, rgba(34,193,195,1) 0%, rgba(241,176,36,1) 100%);
+        background: -o-linear-gradient(bottom, rgba(34,193,195,1) 0%, rgba(241,176,36,1) 100%);
+        background: linear-gradient(to top, rgba(34,193,195,1) 0%, rgba(241,176,36,1) 100%);
+      }
+      
       #txt1{border: 3px solid black;}
       #txt2{border: 3px solid black;}
       #txt3{border: 3px solid black;}
@@ -40,6 +50,8 @@
       #txt9{border: 3px solid black;}
       #txt10{border: 3px solid black;}
       #txt11{border: 3px solid black;}
+      #txt12{border: 3px solid black;}
+      #txt13{border: 3px solid black;}
     </style>
   </head>
   <body>
@@ -47,43 +59,45 @@
       <div class="nav">А</div>
       <div class="nav">Б</div>
       <div class="nav">В</div>
-      <a href="#txt10" onclick="a10()">Виды проводников</a><p></p>
+        <a href="#txt10" onclick="a10()">Виды проводников</a><p></p>
+        <a href="#txt12" onclick="a12()">Взаимодействие между эл. зарядами</a><p></p>
       <div class="nav">Г</div>
       <div class="nav">Д</div>
-      <a href="#txt11" onclick="a11()">Деэилектрики</a><p></p>
+        <a href="#txt11" onclick="a11()">Деэилектрики</a><p></p>
       <div class="nav">Е</div>
       <div class="nav">Ё</div>
       <div class="nav">Ж</div>
       <div class="nav">З</div>
-      <a href="#txt7" onclick="a7()">Закон сохранения эл. заряда</a><p></p>
-      <a href="#txt2" onclick="a2()">Закон кулона</a><p></p>
+        <a href="#txt7" onclick="a7()">Закон сохранения эл. заряда</a><p></p>
+        <a href="#txt2" onclick="a2()">Закон кулона</a><p></p>
       <div class="nav">И</div>
       <div class="nav">Й</div>
       <div class="nav">К</div>
       <div class="nav">Л</div>
       <div class="nav">М</div>
       <div class="nav">Н</div>
-      <a href="#txt3" onclick="a3()">Напряжённость эл. поля</a><p></p>
+        <a href="#txt3" onclick="a3()">Напряжённость эл. поля</a><p></p>
       <div class="nav">О</div>
       <div class="nav">П</div>
-      <a href="#txt8" onclick="a8()">Потенциал</a><p></p>
-      <a href="#txt9" onclick="a9()">Проводник</a><p></p>
+        <a href="#txt8" onclick="a8()">Потенциал</a><p></p>
+        <a href="#txt9" onclick="a9()">Проводник</a><p></p>
       <div class="nav">Р</div>
       <div class="nav">С</div>
-      <a href="#txt1" onclick="a1()">Силовые линии</a><p></p>
+        <a href="#txt1" onclick="a1()">Силовые линии</a><p></p>
       <div class="nav">Т</div>
       <div class="nav">У</div>
       <div class="nav">Ф</div>
       <div class="nav">Х</div>
-      <a href="#txt4" onclick="a4()">Характерная особенность эл. поля</a><p></p>
-      <a href="#txt5" onclick="a5()">Характерная особенность магн. поля</a><p></p>
+        <a href="#txt4" onclick="a4()">Характерная особенность эл. поля</a><p></p>
+        <a href="#txt5" onclick="a5()">Характерная особенность магн. поля</a><p></p>
       <div class="nav">Ц</div>
       <div class="nav">Ч</div>
       <div class="nav">Ш</div>
       <div class="nav">Щ</div>
       <div class="nav">Ы</div>
       <div class="nav">Э</div>
-      <a href="#txt6" onclick="a6()">Электрический заряд</a><p></p>
+        <a href="#txt6" onclick="a6()">Электрический заряд</a><p></p>
+        <a href="#txt13" onclick="a13()">Электростатическое поле</a><p></p>
       <div class="nav">Ю</div>
       <div class="nav">Я</div>
  </div>
@@ -179,34 +193,56 @@
           свободные заряженные частицы.
         </p>
       </div>
+      <div id="txt12">
+        <h1>Взаимодействие между эл. частицами</h1>
+        <p>
+          Взаимодействие между эл. заряженными частицами
+          (телами) осуществляется по средствам
+          электромагнитного поля которое представляет
+          собой 2 взаимосвязанных поля (электрическое
+          и магнитное).
+        </p>
+      </div>
+      <div id="txt13">
+        <h1>Электростатическое поле</h1>
+        <p>
+          Эл. поле неподвижных зарядов по 
+          средствам которых они взаимодействуют
+          называется электростатическим а силы 
+          действующие в нём называются электростатическими.
+        </p>
+      </div>
     </div>
     
     <script>
-      function a1() {clear(); document.getElementById("txt1").style.background = "red";}
-      function a2() {clear(); document.getElementById("txt2").style.background = "red";}
-      function a3() {clear(); document.getElementById("txt3").style.background = "red";}
-      function a4() {clear(); document.getElementById("txt4").style.background = "red";}
-      function a5() {clear(); document.getElementById("txt5").style.background = "red";}
-      function a6() {clear(); document.getElementById("txt6").style.background = "red";}
-      function a7() {clear(); document.getElementById("txt7").style.background = "red";}
-      function a8() {clear(); document.getElementById("txt8").style.background = "red";}
-      function a9() {clear(); document.getElementById("txt9").style.background = "red";}
-      function a10() {clear(); document.getElementById("txt10").style.background = "red";}
-      function a11() {clear(); document.getElementById("txt11").style.background = "red";}
-      
+      function a1(){clear();$("#txt1").addClass("one");}
+      function a2(){clear();$("#txt2").addClass("one");}
+      function a3(){clear();$("#txt3").addClass("one");}
+      function a4(){clear();$("#txt4").addClass("one");}
+      function a5(){clear();$("#txt5").addClass("one");}
+      function a6(){clear();$("#txt6").addClass("one");}
+      function a7(){clear();$("#txt7").addClass("one");}
+      function a8(){clear();$("#txt8").addClass("one");}
+      function a9(){clear();$("#txt9").addClass("one");}
+      function a10(){clear();$("#txt10").addClass("one");}
+      function a11(){clear();$("#txt11").addClass("one");}
+      function a12(){clear();$("#txt12").addClass("one");}
+      function a13(){clear();$("#txt13").addClass("one");}
+    
       function clear() {
-        document.getElementById("txt1").style.background = "none";
-        document.getElementById("txt2").style.background = "none";
-        document.getElementById("txt3").style.background = "none";
-        document.getElementById("txt4").style.background = "none";
-        document.getElementById("txt5").style.background = "none";
-        document.getElementById("txt6").style.background = "none";
-        document.getElementById("txt7").style.background = "none";
-        document.getElementById("txt8").style.background = "none";
-        document.getElementById("txt9").style.background = "none";
-        document.getElementById("txt10").style.background = "none";
-        document.getElementById("txt11").style.background = "none";
-     
+        if($("#txt1").hasClass("one")===true){$("#txt1").removeClass("one");}
+        if($("#txt2").hasClass("one")===true){$("#txt2").removeClass("one");}
+        if($("#txt3").hasClass("one")===true){$("#txt3").removeClass("one");}
+        if($("#txt4").hasClass("one")===true){$("#txt4").removeClass("one");}
+        if($("#txt5").hasClass("one")===true){$("#txt5").removeClass("one");}
+        if($("#txt6").hasClass("one")===true){$("#txt6").removeClass("one");}
+        if($("#txt7").hasClass("one")===true){$("#txt7").removeClass("one");}
+        if($("#txt8").hasClass("one")===true){$("#txt8").removeClass("one");}
+        if($("#txt9").hasClass("one")===true){$("#txt9").removeClass("one");}
+        if($("#txt10").hasClass("one")===true){$("#txt10").removeClass("one");}
+        if($("#txt11").hasClass("one")===true){$("#txt11").removeClass("one");}
+        if($("#txt12").hasClass("one")===true){$("#txt12").removeClass("one");}
+        if($("#txt13").hasClass("one")===true){$("#txt13").removeClass("one");}
       }
     </script>
   </body>
