@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      * {
+        zoom: 100%;
+        margin-bottom: 10px;
+      }
+      body {
+        background: linear-gradient(to bottom left, #22238c, #144885);
+      }
+      a {
+        font-size: 150%;
+        background: linear-gradient(to top left, #312fa8, #763a9c);
+        border-radius: 20px;
+        color: white;
+        text-decoration: none;
+      }
+      #txt1{border: 3px solid black;}
+      #txt2{border: 3px solid black;}
+      #txt3{border: 3px solid black;}
+      #txt4{border: 3px solid black;}
+      #txt5{border: 3px solid black;}
+      #txt6{border: 3px solid black;}
+      #txt7{border: 3px solid black;}
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <a href="#txt1" onclick="a1()">Силовые линии</a><p></p>
+      <a href="#txt2" onclick="a2()">Закон кулона</a><p></p>
+      <a href="#txt3" onclick="a3()">Напряжённость эл. поля</a><p></p>
+      <a href="#txt4" onclick="a4()">Характерная особенность эл. поля</a><p></p>
+      <a href="#txt5" onclick="a5()">Характерная особенность магн. поля</a><p></p>
+      <a href="#txt6" onclick="a6()">Электрический заряд</a><p></p>
+      <a href="#txt7" onclick="a7()">Закон сохранения эл. заряда</a>
+    </div>
+    <div id="main">
+      <div id="txt1">
+        <h1>силовые линии</h1>
+        <p>
+          Силовые линии: это воображаемые
+          линии косательные к которым в
+          каждой точке поля направлены 
+          также как и вектор Е в этих 
+          точках.
+        </p>
+      </div>
+      <div id="txt2">
+        <h1>Закон кулона</h1>
+        <p>
+          Закон кулона: сила взаимодействия
+          2 точечных неподвижных 
+          электрических зарядов расположенных 
+          в вакууме прямо пропорционально
+          модулю этих зарядов и 
+          обратнопропорционально квадрату
+          расстояния между ними.
+        </p>
+      </div>
+      <div id="txt3">
+        <h1>Напряжённость эл. поля</h1>
+        <p>
+          Напряжённость эл. поля: это 
+          векторная величина численно
+          равная силе, действующая на 
+          единичный положительный пробный 
+          заряд (+1кл) находящиеся в 
+          данной точке поля. Е
+        </p>
+      </div>
+      <div id="txt4">
+        <h1>Характерная особенность эл. поля</h1>
+        <p>
+          Действует на заряженную частицу 
+          не зависимо движется она или покоится.
+        </p>
+      </div>
+      <div id="txt5">
+        <h1>Характерная особенность магнитного поля</h1>
+        <p>
+          Действует только на движущиеся частицы.
+        </p>
+      </div>
+      <div id="txt6">
+        <h1>Электрический заряд</h1>
+        <p>
+          Физическая величина определяющая
+          силу электромагнитного воздействия. кулон.
+        </p>
+      </div>
+      <div id="txt7">
+        <h1>Закон сохранения эл. заряда</h1>
+        <p>
+          Алгеброическая сумма заряда тел 
+          образующих электрически-изолированную
+          сис. остаётся постоянной при любых
+          процессах внутри этой сис.
+        </p>
+      </div>
+    </div>
+    
+    <script>
+      function a1() {clear(); document.getElementById("txt1").style.background = "red";}
+      function a2() {clear(); document.getElementById("txt2").style.background = "red";}
+      function a3() {clear(); document.getElementById("txt3").style.background = "red";}
+      function a4() {clear(); document.getElementById("txt4").style.background = "red";}
+      function a5() {clear(); document.getElementById("txt5").style.background = "red";}
+      function a6() {clear(); document.getElementById("txt6").style.background = "red";}
+      function a7() {clear(); document.getElementById("txt7").style.background = "red";}
+      
+      function clear() {
+        document.getElementById("txt1").style.background = "none";
+        document.getElementById("txt2").style.background = "none";
+        document.getElementById("txt3").style.background = "none";
+        document.getElementById("txt4").style.background = "none";
+        document.getElementById("txt5").style.background = "none";
+        document.getElementById("txt6").style.background = "none";
+        document.getElementById("txt7").style.background = "none";
+      }
+    </script>
+  </body>
+</html>
