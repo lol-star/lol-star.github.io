@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style type="text/css">
       * {
-        zoom: 100%;
+        zoom: 97%;
         margin-bottom: 10px;
       }
       body {
@@ -30,6 +30,8 @@
         border-radius: 20px;
         font-family: 'Roboto', sans-serif;
         text-align: center;
+        width: 150px;
+        height: 100px;
       }
       .one {
         background: rgb(34,193,195);
@@ -52,6 +54,20 @@
       #txt11{border: 3px solid black; border-radius: 20px;}
       #txt12{border: 3px solid black; border-radius: 20px;}
       #txt13{border: 3px solid black; border-radius: 20px;}
+      #txt14{border: 3px solid black; border-radius: 20px;}
+      #txt15{border: 3px solid black; border-radius: 20px;}
+      #txt16{border: 3px solid black; border-radius: 20px;}
+      #txt17{border: 3px solid black; border-radius: 20px;}
+      #txt18{border: 3px solid black; border-radius: 20px;}
+      #txt19{border: 3px solid black; border-radius: 20px;}
+      #txt20{border: 3px solid black; border-radius: 20px;}
+      #txt21{border: 3px solid black; border-radius: 20px;}
+      #txt22{border: 3px solid black; border-radius: 20px;}
+      #txt23{border: 3px solid black; border-radius: 20px;}
+      #txt24{border: 3px solid black; border-radius: 20px;}
+      #txt25{border: 3px solid black; border-radius: 20px;}
+      #txt26{border: 3px solid black; border-radius: 20px;}
+      #txt27{border: 3px solid black; border-radius: 20px;}
     </style>
   </head>
   <body>
@@ -61,6 +77,8 @@
       <div class="nav">В</div>
         <a href="#txt10" onclick="a10()">Виды проводников</a><p></p>
         <a href="#txt12" onclick="a12()">Взаимодействие между эл. зарядами</a><p></p>
+        <a href="#txt15" onclick="a15()">Виды эл. зарядов</a><p></p>
+        <a href="#txt23" onclick="a23()">Виды диелектриков</a><p></p>
       <div class="nav">Г</div>
       <div class="nav">Д</div>
         <a href="#txt11" onclick="a11()">Деэилектрики</a><p></p>
@@ -73,18 +91,26 @@
       <div class="nav">И</div>
       <div class="nav">Й</div>
       <div class="nav">К</div>
+        <a href="#txt18" onclick="a18()">Кратность/дробность эл. заряда</a><p></p>
       <div class="nav">Л</div>
       <div class="nav">М</div>
       <div class="nav">Н</div>
         <a href="#txt3" onclick="a3()">Напряжённость эл. поля</a><p></p>
+        <a href="#txt19" onclick="a19()">Напряж. поля действующего на заряд</a><p></p>
+        <a href="#txt25" onclick="a25()">Не полярные диелектрики</a><p></p>
       <div class="nav">О</div>
+        <a href="#txt21" onclick="a21()">Однородное Эл. поле</a><p></p>
       <div class="nav">П</div>
         <a href="#txt8" onclick="a8()">Потенциал</a><p></p>
         <a href="#txt9" onclick="a9()">Проводник</a><p></p>
+        <a href="#txt24" onclick="a24()">Полярные диелектрики</a><p></p>
+        <a href="#txt26" onclick="a26()">Поляризация</a><p></p>
       <div class="nav">Р</div>
       <div class="nav">С</div>
         <a href="#txt1" onclick="a1()">Силовые линии</a><p></p>
+        <a href="#txt20" onclick="a20()">Силовые линии электро-статического поля</a><p></p>
       <div class="nav">Т</div>
+        <a href="#txt16" onclick="a16()">Точечный заряд</a><p></p>
       <div class="nav">У</div>
       <div class="nav">Ф</div>
       <div class="nav">Х</div>
@@ -92,12 +118,16 @@
         <a href="#txt5" onclick="a5()">Характерная особенность магн. поля</a><p></p>
       <div class="nav">Ц</div>
       <div class="nav">Ч</div>
+        <a href="#txt17" onclick="a17()">Частицы несущие заряд</a><p></p>
       <div class="nav">Ш</div>
       <div class="nav">Щ</div>
       <div class="nav">Ы</div>
       <div class="nav">Э</div>
         <a href="#txt6" onclick="a6()">Электрический заряд</a><p></p>
         <a href="#txt13" onclick="a13()">Электростатическое поле</a><p></p>
+        <a href="#txt14" onclick="a14()">Электродинамика</a><p></p>
+        <a href="#txt22" onclick="a22()">Эквипотенциал</a><p></p>
+        <a href="#txt27" onclick="a27()">Эл. ёмкость проводника</a><p></p>
       <div class="nav">Ю</div>
       <div class="nav">Я</div>
  </div>
@@ -200,7 +230,9 @@
           (телами) осуществляется по средствам
           электромагнитного поля которое представляет
           собой 2 взаимосвязанных поля (электрическое
-          и магнитное).
+          и магнитное). <p></p>
+          Одноимённые заряды отталкиваются,
+          разноимённые притягиваются.
         </p>
       </div>
       <div id="txt13">
@@ -210,6 +242,129 @@
           средствам которых они взаимодействуют
           называется электростатическим а силы 
           действующие в нём называются электростатическими.
+        </p>
+      </div>
+      <div id="txt14">
+        <h1>Электродинамика</h1>
+        <p>
+          Раздел физики в котором изучаются законы
+          электромагнитного поля.
+        </p>
+      </div>
+      <div id="txt15">
+        <h1>Виды эл. зарядов</h1>
+        <p>
+          Положительный (возникает на стекле
+          натёртом кожей) и отрицательный (на 
+          янторе натёртом шерстью).
+        </p>
+      </div>
+      <div id="txt16">
+        <h1>Точечный заряд</h1>
+        <p>
+          Это заряженная материальная точка.
+        </p>
+      </div>
+      <div id="txt17">
+        <h1>Частицы несущие заряд</h1>
+        <p>
+          Наименьшей частицей несущей отрицательный
+          заряд является электрон (-1,6*10(-19)Кл),
+          элементарным носителем положительного
+          заряда является протон (+1,6*10(-19)Кл).
+        </p>
+      </div>
+      <div id="txt18">
+        <h1>Кратность/дробность эл. заряда</h1>
+        <p>
+          Заряд любого тела всегда кратен.
+        </p>
+      </div>
+      <div id="txt19">
+        <h1>Напряжённость поля действующего на заряд</h1>
+        <p>
+          Если эл. поле создано системой из 
+          малых зарядов то результатирующую
+          силу (напряжённость) находят по 
+          принципу суперпозиции. <p></p>
+          То есть результатирующая сила (напряжённость)
+          поля системы зарядов равна векторной
+          сумме сил (напряжённости) полей создаваемых
+          каждым из зарядов по отдельности.
+        </p>
+      </div>
+      <div id="txt20">
+        <h1>Силовые линии электро-статического поля</h1>
+        <p>
+          Всегда непрерывны, не пересекаются, разомкнуты,
+          начинаются на положительном заряде и оканчиваются
+          на отрицательном или уходят в бесконечность.
+        </p>
+      </div>
+      <div id="txt21">
+        <h1>Однородное эл. поле</h1>
+        <p>
+          Если а каждой точке вектор Е=const.
+          <p></p>
+          Понятие эл. поле ввёл М.Фарадей.
+        </p>
+      </div>
+      <div id="txt22">
+        <h1>Эквипотенциал</h1>
+        <p>
+          Поверхность в каждой точке которой потенциал 
+          сохраняет одно и то-же значение.
+        </p>
+      </div>
+      <div id="txt23">
+        <h1>Виды диелектриков</h1>
+        <p>
+          1) <a onclick="a24()" href="#txt24">Полярные</a> <p></p>
+          2) <a onclick="a25()" href="#txt25">Не полярные</a> <p></p>
+          3) Ионные
+        </p>
+      </div>
+      <div id="txt24">
+        <h1>Полярные диелектрики</h1>
+        <p>
+          Молекулы таких веществ имеют строение
+          при котором „центры тяжести“ положительных
+          и отрицательных зарядов соврадают.
+        </p>
+      </div>
+      <div id="txt25">
+        <h1>Не полярные диелектрики</h1>
+        <p>
+          Молекулы таких веществ имеют строение
+          при котором „центры тяжести“ положительных
+          и отрицательных зарядов соврадают поэтому
+          в целом молекула нейтральна.
+        </p>
+      </div>
+      <div id="txt26">
+        <h1>Поляризация</h1>
+        <p>
+          Явления возникновения на противоположных
+          гранях диелектрика связанных зарядов при
+          наличии эл. поля.
+        </p>
+      </div>
+      <div id="txt27">
+        <h1>Эл. ёмкость проводника</h1>
+        <p>
+          Различают электрическую ёмкость 
+          уединённого проводника и системы
+          проводников (<a href="txt28" onclick="a28()">конденсатор</a>).<p></p>
+          Под эл. ёмкостью проводника понимают
+          отношение заряда проводника к его потенциалу.
+        </p>
+      </div>
+      <div id="txt28">
+        <h1>Конденсатор</h1>
+        <p>
+          система из 2 и более проводников
+          разделённым слоем диелектрика. Проводники
+          называется обкладчиками.
         </p>
       </div>
     </div>
@@ -228,6 +383,21 @@
       function a11(){clear();$("#txt11").addClass("one");}
       function a12(){clear();$("#txt12").addClass("one");}
       function a13(){clear();$("#txt13").addClass("one");}
+      function a14(){clear();$("#txt14").addClass("one");}
+      function a15(){clear();$("#txt15").addClass("one");}
+      function a16(){clear();$("#txt16").addClass("one");}
+      function a17(){clear();$("#txt17").addClass("one");}
+      function a18(){clear();$("#txt18").addClass("one");}
+      function a19(){clear();$("#txt19").addClass("one");}
+      function a20(){clear();$("#txt20").addClass("one");}
+      function a21(){clear();$("#txt21").addClass("one");}
+      function a22(){clear();$("#txt22").addClass("one");}
+      function a23(){clear();$("#txt23").addClass("one");}
+      function a24(){clear();$("#txt24").addClass("one");}
+      function a25(){clear();$("#txt25").addClass("one");}
+      function a26(){clear();$("#txt26").addClass("one");}
+      function a27(){clear();$("#txt27").addClass("one");}
+      function a28(){clear();$("#txt28").addClass("one");}
     
       function clear() {
         if($("#txt1").hasClass("one")===true){$("#txt1").removeClass("one");}
@@ -243,6 +413,21 @@
         if($("#txt11").hasClass("one")===true){$("#txt11").removeClass("one");}
         if($("#txt12").hasClass("one")===true){$("#txt12").removeClass("one");}
         if($("#txt13").hasClass("one")===true){$("#txt13").removeClass("one");}
+        if($("#txt14").hasClass("one")===true){$("#txt14").removeClass("one");}
+        if($("#txt15").hasClass("one")===true){$("#txt15").removeClass("one");}
+        if($("#txt16").hasClass("one")===true){$("#txt16").removeClass("one");}
+        if($("#txt17").hasClass("one")===true){$("#txt17").removeClass("one");}
+        if($("#txt18").hasClass("one")===true){$("#txt18").removeClass("one");}
+        if($("#txt19").hasClass("one")===true){$("#txt19").removeClass("one");}
+        if($("#txt20").hasClass("one")===true){$("#txt20").removeClass("one");}
+        if($("#txt21").hasClass("one")===true){$("#txt21").removeClass("one");}
+        if($("#txt22").hasClass("one")===true){$("#txt22").removeClass("one");}
+        if($("#txt23").hasClass("one")===true){$("#txt23").removeClass("one");}
+        if($("#txt24").hasClass("one")===true){$("#txt24").removeClass("one");}
+        if($("#txt25").hasClass("one")===true){$("#txt25").removeClass("one");}
+        if($("#txt26").hasClass("one")===true){$("#txt26").removeClass("one");}
+        if($("#txt27").hasClass("one")===true){$("#txt27").removeClass("one");}
+        if($("#txt28").hasClass("one")===true){$("#txt28").removeClass("one");}
       }
     </script>
   </body>
