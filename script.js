@@ -1,12 +1,14 @@
-function togglePassword() {
-    var input = document.getElementById('password');
-    var icon = document.getElementById('icon');
+//var arr = [10, 20, 30, 40];
+var arr = [];
 
-    if(input.type === "password") {
-        input.type = "text";
-        icon.classList.add('selected');
-    } else {
-        input.type = "password";
-        icon.classList.remove('selected')
-    }
+for(var j = 0; j >= 10; j++) {
+    arr.push(j)
 }
+
+var sum = 0;
+
+for(var i = 0; i <= arr.length-1 ;i++) {
+    sum += arr[i];
+}
+
+console.log(sum);

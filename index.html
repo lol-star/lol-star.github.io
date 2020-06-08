@@ -1,63 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <style>
-          .input-wrapper {
-              margin-top: 20px;
-              margin-left: 20px;
-              box-shadow: rgba(113, 113, 113, 0.15) -5px -5px 11px, rgba(0, 0, 0, 0.15) 5px 5px 11px;
-              border-radius: 20px;
-              width: 325px;
-              height: 55px;
-              display: flex;
-              align-items: center;
-          }
-          
-          .input-wrapper input {
-              background: transparent;
-              border: none;
-              width: 100%;
-              height: 100%;
-              border-radius: 20px;
-              text-indent: 20px;
-              color: #B2BECD;
-              font-size: 14px;
-              outline: 0;
-          }
-          
-          .input-icon {
-              width:  20px;
-              margin-right: 20px;
-              border-radius: 50px;
-              padding: 3px 6px;
-              cursor: pointer;
-              transition: all .4s ease;
-          }
-          
-          .input-icon.selected {
-              background-color:  #2d2d2d;
-          }
-          
-          .input-icon img {
-              max-width: 100%;
-          }
-          
-          ::-webkit-input-placeholder {
-              color: #B2BECD;
-          }
-        </style>
-    </head>
-    <body>
-        <form action="#" method="POST">
-          <div class="input-wrapper">
-            <input type="text" name="name" id="name" placeholder="Введите имя"><br>
-            <input type="password" name="pass" id="password" placeholder="Введите пароль">
-            <div class="input-icon" id="icon" onclick="togglePassword()">
-                <img src="icon.svg">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jq.js"></script>
+    <style>
+        * {
+            margin: 0;
+            position: relative;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .a {
+            max-width: 300px;
+            left: 40%;
+            margin-bottom: 5px;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+        .b {
+            max-width: 300px;
+            left: 40%;
+            margin-bottom: 5px;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+        .c {
+            max-width: 300px;
+            left: 40%;
+            margin-bottom: 5px;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+        .d {
+            max-width: 300px;
+            left: 40%;
+            margin-bottom: 5px;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#a" class="btn1" onclick="btn1()">Механическое движение</a>
+    </header>
+
+    <section>
+        <div class="1">
+            <div class="a">
+                <h3>Механическое движение</h3>  изменение взаимного положения тел или их частей в пространстве с течением времени.
             </div>
-          </div>
-        </form>
-        <script src="script.js"></script>
-    </body>
+            <div class="b">
+                <h3>Относительность механического движения</h3> это зависимость траектории движения тела, пройденного пути, перемещения и скорости от выбора системы отсчёта. Движущиеся тела изменяют своё положение относительно других тел в пространстве с течением времени.
+            </div>
+            <div class="c">
+                <h3>Система отсчета </h3> совокупность тела отсчета, связанная с ним система координат и синхронизированные между собой часы.
+            </div>
+            <div class="d">
+                <h3>Преобразова́ния Галиле́я</h3> в классической механике и нерелятивистской квантовой механике: преобразования координат и скорости при переходе от одной инерциальной системы отсчета к другой. Термин был предложен Филиппом Франком в 1909 году.
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function btn1() {
+            $(".a").addClass("red")
+        }
+    </script>
+</body>
 </html>
